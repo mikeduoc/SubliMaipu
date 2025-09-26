@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - SubliMaipu</title>
+    <link rel="stylesheet" href="subli_css/subli_estilo.css">
+</head> 
+<body>
+
+<header>
+    <div class="header-container container">
+        <a href="subli_home.html" class="logo">
+            <img src="images/logo.svg" alt="Logo SubliMaipu">
+        </a>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="subli_home.html">Inicio</a></li>
+                <li><a href="subli_productos.html">Productos</a></li>
+                <li><a href="subli_nosotros.html">Nosotros</a></li>
+                <li><a href="subli_contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-usuario">
+            <a href="iniciar_sesion.html">Iniciar Sesión</a>
+            <a href="registro.html">Registrar Usuario</a>
+            <a href="#" class="cart-icon">🛒 Carrito (<span id="cart-count">0</span>)</a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icono">
+            <img src="images/menu.png" alt="Menú">
+        </label>
+    </div>
+</header>
+
+<main>
+    <section class="form-container">
+        
+        <div id="form-wrapper">
+            <h2>Recuperar Contraseña</h2>
+            <p style="color:#A7A7A7; text-align:center; margin-bottom: 20px; line-height: 1.6;">
+                Ingresa tu correo electronico asociado a tu cuenta y te enviaremos para restablecer tu contraseña.
+            </p>
+            
+            <form id="recuperar-form" novalidate>
+                <div class="form-group">
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" id="email" name="email" required>
+                    <p class="error-message" id="email-error"></p>
+                </div>
+                <button type="submit" class="btn">Enviar Instrucciones</button>
+            </form>
+        </div>
+
+    </section>
+</main>
+
+<script src="subli_js/subli_animacion.js" defer></script>
+</body>
+</html>

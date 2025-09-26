@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Producto - Admin</title>
+    <link rel="stylesheet" href="subli_css/admin_estilo.css">
+</head>
+<body>
+    <aside class="admin-sidebar">
+    <h2>Admin Panel</h2>
+        <nav>
+            <ul>
+                <li><a href="admin_listar_productos.html">Listar Productos</a></li>
+                <li><a href="admin_crear_producto.html" class="active">Crear Producto</a></li>
+            </ul>
+            
+            <a href="subli_home.html" class="back-to-site">← Volver a la Tienda</a>
+        </nav>
+    </aside>
+
+    <main class="admin-content">
+        <h1>Crear Nuevo Producto</h1>
+        <div class="admin-card">
+            <form id="create-product-form" class="form-container" novalidate>
+                
+                <div class="form-group">
+                    <label for="product-code">Codigo del Producto</label>
+                    <input type="text" id="product-code">
+                    <div class="error-message" id="error-code"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-name">Nombre del Producto</label>
+                    <input type="text" id="product-name">
+                    <div class="error-message" id="error-name"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-description">Descripcion (Opcional)</label>
+                    <textarea id="product-description" rows="4"></textarea>
+                    <div class="error-message" id="error-description"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-price">Precio</label>
+                    <input type="number" id="product-price" step="0.01">
+                    <div class="error-message" id="error-price"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-stock">Stock (Inventario)</label>
+                    <input type="number" id="product-stock">
+                    <div class="error-message" id="error-stock"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-stock-critical">Stock Critico (Opcional)</label>
+                    <input type="number" id="product-stock-critical">
+                    <div class="error-message" id="error-stock-critical"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-category">Categoria</label>
+                    <select id="product-category">
+                        <option value="">Seleccione...</option>
+                        <option value="tazones">Tazones</option>
+                        <option value="llaveros">Llaveros</option>
+                        <option value="rocas">Rocas Fotográficas</option>
+                    </select>
+                    <div class="error-message" id="error-category"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-image">URL de la Imagen (Opcional)</label>
+                    <input type="text" id="product-image" placeholder="Ej: images/nuevo_tazon.jpg">
+                    <div class="error-message" id="error-image"></div>
+                </div>
+
+                <button type="submit" class="btn">Guardar Producto</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="subli_js/admin_js.js"></script>
+</body>
+</html>

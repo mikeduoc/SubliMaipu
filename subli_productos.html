@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Productos</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="subli_css/subli_estilo.css">
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <a href="subli_home.html" class="logo">
+                <img src="images/logo.svg" alt="Logo SubliMaipu">
+            </a>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="subli_home.html">Inicio</a></li>
+                    <li><a href="subli_productos.html">Productos</a></li>
+                    <li><a href="subli_nosotros.html">Nosotros</a></li>
+                    <li><a href="subli_contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-usuario">
+                </div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icono">
+                <img src="images/menu.png" alt="Menú">
+            </label>
+        </div>
+    </header>
+
+    <main class="products">
+        <div class="tabs container">
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+            <label for="tab1">Tazones</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2">
+                    <div class="swiper-wrapper" id="productos-tazones">
+                        </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <input type="radio" name="tabs" id="tab2" class="tabInput" value="2">
+            <label for="tab2">Llaveros</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2">
+                    <div class="swiper-wrapper" id="productos-llaveros">
+                        </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <input type="radio" name="tabs" id="tab3" class="tabInput" value="3">
+            <label for="tab3">Roca Fotográfica</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2">
+                     <div class="swiper-wrapper" id="productos-rocas">
+                        </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="subli_js/subli_animacion.js"></script>
+</body>
+</html>

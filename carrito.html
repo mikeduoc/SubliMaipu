@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - SubliMaipu</title>
+    <link rel="stylesheet" href="subli_css/subli_estilo.css">
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <a href="subli_home.html" class="logo">
+                <img src="images/logo.svg" alt="Logo SubliMaipu">
+            </a>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="subli_home.html">Inicio</a></li>
+                    <li><a href="subli_productos.html">Productos</a></li>
+                    <li><a href="subli_nosotros.html">Nosotros</a></li>
+                    <li><a href="subli_contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-usuario">
+                </div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icono">
+                <img src="images/menu.png" alt="Menú">
+            </label>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="cart-container">
+            <h2>Carrito de Compras</h2>
+            
+            <div id="cart-items-container">
+                </div>
+
+            <div id="cart-summary">
+                <h3>Resumen de la Compra</h3>
+                <div class="summary-total">
+                    <span>Total:</span>
+                    <span id="cart-total-price">$0</span>
+                </div>
+                <div class="summary-actions">
+                    <button class="btn" id="checkout-btn">Finalizar Compra</button>
+                    <button class="btn-3" id="clear-cart-btn">Vaciar Carrito</button>
+                </div>
+            </div>
+
+            <div id="empty-cart-message" style="display: none;">
+                <p>Tu carrito esta vacio.</p>
+                <a href="subli_productos.html" class="btn-2">Ver Productos</a>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="subli_js/subli_animacion.js"></script>
+</body>
+</html>

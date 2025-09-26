@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - SubliMaipu</title>
+    <link rel="stylesheet" href="subli_css/subli_estilo.css">
+</head> 
+<body>
+
+<header>
+    <div class="header-container container">
+        <a href="subli_home.html" class="logo">
+            <img src="images/logo.svg" alt="Logo SubliMaipu">
+        </a>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="subli_home.html">Inicio</a></li>
+                <li><a href="subli_productos.html">Productos</a></li>
+                <li><a href="subli_nosotros.html">Nosotros</a></li>
+                <li><a href="subli_contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-usuario">
+            <a href="iniciar_sesion.html">Iniciar Sesion</a>
+            <a href="registro.html">Registrar Usuario</a>
+            <a href="#" class="cart-icon">🛒 Carrito (<span id="cart-count">0</span>)</a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icono">
+            <img src="images/menu.png" alt="Menú">
+        </label>
+    </div>
+</header>
+
+<main>
+    <section class="form-container">
+        <img class="form-logo" src="images/logo.svg" alt="Logo SubliMaipu">
+
+        <h2>Registro de Usuario</h2>
+        <form id="registro-form" novalidate>
+    <div class="form-group">
+        <label for="run">RUT</label>
+        <input type="text" id="run" name="run" placeholder="12345678-K">
+    </div>
+    <div class="form-group">
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" name="nombre">
+    </div>
+    <div class="form-group">
+        <label for="email">Correo Electronico</label>
+        <input type="email" id="email" name="email" placeholder="hola@gmail.com">
+    </div>
+    <div class="form-group">
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Calle Falsa #1234">
+    </div>
+    <div class="form-group">
+        <label for="password">Contraseña (4-10 caracteres)</label>
+        <input type="password" id="password" name="password">
+    </div>
+    <div class="form-group">
+        <label for="confirm-password">Confirmar Contraseña</label>
+        <input type="password" id="confirm-password" name="confirm-password">
+    </div>
+    
+    <div class="error-message" id="registro-error"></div>
+
+    <button type="submit" class="btn">Registrar</button>
+</form>
+
+        <div class="form-links">
+             <p style="color:#A7A7A7;">¿Ya tienes una cuenta? <a href="iniciar_sesion.html">Inicia Sesion aqui</a></p>
+        </div>
+    </section>
+</main>
+
+<script src="subli_js/subli_animacion.js" defer></script>
+
+</body>
+</html>
