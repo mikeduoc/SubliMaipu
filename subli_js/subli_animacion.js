@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (foundUser.role === 'administrador') {
                         setTimeout(() => { window.location.href = 'admin_listar_productos.html'; }, 1500);
                     } else {
-                        setTimeout(() => { window.location.href = 'subli_home.html'; }, 1500);
+                        setTimeout(() => { window.location.href = 'index.html'; }, 1500);
                     }
                 } else {
                     errorElement.textContent = 'Correo o contraseña incorrectos.';
